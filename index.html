@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+        label { display: block; margin-top: 12px; font-weight: bold; }
+        input { width: 100%; padding: 8px; box-sizing: border-box; margin-top: 4px; }
+        button { margin-top: 16px; padding: 10px 16px; cursor: pointer; }
+        #error { color: #b00020; margin-top: 12px; }
+        #results { margin-top: 20px; padding: 16px; border-radius: 8px; display: none; }
+        /* #results.hitGoal   { background: #d9f5df; }
+        #results.medium { background: #fff3cd; }
+        #results.false   { background: #f8d7da; } */
+    </style>
+
+</head>
+<body>
+    <h1>Daily Coach</h1>
+
+    <label for="nameInput">Your name</label>
+    <input id="nameInput" type="text" placeholder="Enter your name">
+
+    <label for="sleepInput">Sleep hours</label>
+    <input id="sleepInput" type="number" placeholder="e.g. 7" step=".5">
+
+    <label for="waterInput">Water glasses</label>
+    <input type="number" placeholder="e.g. 8" id="waterInput">
+
+    <label for="stepsInput">Steps</label>
+    <input type="number" placeholder="e.g. 7000" id="stepsInput">
+
+    <button id="btn">Get my coaching</button>
+
+    <p id="error"></p>
+
+
+    <p id="greet"></p>
+
+    <h2 hidden>PREDICTION</h2>
+    <p id="outcome"></p>
+
+    <h2 hidden>COACHING</h2>
+    <p id="message"></p>
+
+    <!-- <ul id="tips">
+    <li>Sleep: you got 7h, aim for 8h. Try going to bed 30 minutes earlier.</li>
+    <li>Water: you had 6 glasses, aim for 8. Keep a bottle on your desk.</li>
+    <li>Steps: you did 7000, aim for 10000. A 15-minute walk adds about 1,500 steps.</li>
+    </ul> -->
+
+    
+
+
+
+
+
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
